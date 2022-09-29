@@ -40,7 +40,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "site.yml"
-    ansible.groups = {  
+    ansible.groups = {
       "master" => ["k8s-master"],
       "worker" => ["k8s-worker[1:#{WORKER_NB}]"],
       "kube_cluster:children" => ["master", "worker"],
