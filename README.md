@@ -24,6 +24,11 @@ k get nodes
 vagrant provision  # it executes the file : site.yml
 ```
 
+Stop the VMs :
+```sh
+vagrant halt
+```
+
 Remove the Kubernetes cluter :
 ```sh
 vagrant destroy -f
