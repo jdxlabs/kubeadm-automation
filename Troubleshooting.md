@@ -28,27 +28,18 @@ vagrant plugin install virtualbox_WSL2
 ~/.zshrc
 cf. https://developer.hashicorp.com/vagrant/docs/other/wsl
 export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
-export VAGRANT_WSL_WINDOWS_ACCESS_USER_HOME_PATH="/home/username/"
-export PATH="$PATH:/mnt/c/Program\ Files/Oracle/VirtualBox/"
 
 /etc/wsl.conf
-# Enable extra metadata options by default
 [automount]
-enabled = true
-root = /mnt/
-options = "metadata,umask=77,fmask=11"
-mountFsTab = false
-
-# Restart WSL2
-Restart-Service -Name "LxssManager"
+options = "metadata"
 ```
 
 ### Problem for SSH access : chmod doesn't work with Vagrant
 
-Some tips : 
+Some guides for troubleshooting : 
 https://stackoverflow.com/questions/29021246/ssh-fails-due-to-key-file-permissions-when-i-try-to-provision-a-vagrant-vm-with
 https://thedatabaseme.de/2022/02/20/vagrant-up-running-vagrant-under-wsl2/
-
+https://github.com/geerlingguy/ansible-for-devops/issues/291
 
 Still fails on WSL2, at this step :
 ```
