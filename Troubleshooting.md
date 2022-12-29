@@ -45,11 +45,12 @@ Restart-Service -Name "LxssManager"
 
 ### Problem for SSH access : chmod doesn't work with Vagrant
 
+Some tips : 
 https://stackoverflow.com/questions/29021246/ssh-fails-due-to-key-file-permissions-when-i-try-to-provision-a-vagrant-vm-with
 https://thedatabaseme.de/2022/02/20/vagrant-up-running-vagrant-under-wsl2/
 
 
-### Still fails on WSL2, at this step :
+Still fails on WSL2, at this step :
 ```
 TASK [Gathering Facts] *********************************************************
 Thursday 29 December 2022  23:43:12 +0100 (0:00:00.403)       0:00:00.403 *****
