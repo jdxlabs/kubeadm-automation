@@ -9,6 +9,20 @@ Deploy the Kubernetes cluster :
 vagrant up
 ```
 
+Useful commands :
+```sh
+# to see the current status
+cd ./kubeadm-automation
+vagrant status
+
+# to access to the kubernetes cli
+vagrant ssh k8s-worker1
+kubectl get nodes
+
+# Relaunch the Ansible code (if needed)
+vagrant provision  # it executes the file : site.yml
+```
+
 Remove the Kubernetes cluter :
 ```sh
 vagrant destroy -f
