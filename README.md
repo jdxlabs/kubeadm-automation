@@ -16,8 +16,9 @@ cd ./kubeadm-automation
 vagrant status
 
 # to access to the kubernetes cli
-vagrant ssh k8s-worker1
-kubectl get nodes
+vagrant ssh k8s-master
+alias k=kubectl
+k get nodes
 
 # Relaunch the Ansible code (if needed)
 vagrant provision  # it executes the file : site.yml
