@@ -38,3 +38,4 @@ https://developer.hashicorp.com/vagrant/docs/other/wsl
 https://stackoverflow.com/questions/29021246/ssh-fails-due-to-key-file-permissions-when-i-try-to-provision-a-vagrant-vm-with
 https://thedatabaseme.de/2022/02/20/vagrant-up-running-vagrant-under-wsl2/
 https://github.com/geerlingguy/ansible-for-devops/issues/291
+https://github.com/JeffReeves/WSL-Ansible-Vagrant-VirtualBox
